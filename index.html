@@ -10,6 +10,7 @@
     <!-- TODO: Include Font Awesome file here -->
     <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
     <!-- TODO: Include Google Fonts file here -->
+    
 </head>
 
 <body>
@@ -64,7 +65,7 @@
                                 <input type="password" required class="form-control" id="conpassword" name="conpassword" placeholder="Re-enter your password" />
                             </div>
 
-                                <button type="submit" class="btn btn-success pt-2  mx-auto w-100">Sign Up</button>
+                                <button type="submit" class="btn btn-success mb-2  mx-auto w-100">Sign Up</button>
                         </form>
                     </div>
                 </div>
@@ -104,13 +105,43 @@
           </div>
 
 
+
+          <!-- create post -->
+
+          <div class="modal fade" id="CreatePost" tabindex="-1" role="dialog" aria-labelledby="CreatePostTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" style="max-width: 85%" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title fw-light" id="CreatePostTitle">Pen Your Post</h3>
+                        <button type="button" class="btn-close d-none" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <!-- Custom close button image -->
+                        <i class="fa fa-times" aria-hidden="true" class="custom-close-btn " style="cursor: pointer;" data-bs-dismiss="modal" aria-label="Close"></i>
+                    </div>
+                    <div class="modal-body">
+                        <label for="title">Title</label>
+                        <input required type="text" class="form-control" name="title" id="" placeholder="Enter title of your post">
+                    </div>
+                    <div class="modal-body">
+                        <label for="contents">Contents</label>
+                        <textarea required class="form-control" name="contents" id="" cols="40" rows="12"
+                            placeholder="Enter the contents of your post"></textarea>
+                    </div>
+                    <div class="pt-3 d-flex justify-content-center mb-3" id="createbtn">
+                        <button type="submit" class="btn btn-success" id="create" style="width: 10%;">Create</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+
         <!---------------------- Modals ends ----------------------->
 
 
         <!---------------------- body starts -------------------------->
         <div class="center_body">
-            <button>All Posts</button>
-            <button>Create Post</button>
+            <button >All Posts</button>
+            <button data-bs-toggle="modal" data-bs-target="#CreatePost">Create Post</button>
         </div>
         <!---------------------- body ends   -------------------------->
 
