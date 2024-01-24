@@ -40,12 +40,20 @@ body {
 }
 .main_box{
     display: flex;
-     border-radius: 20px;
+    border-radius: 20px;
     background-color: rgb(206, 203, 203);
     width: 40%;
-    overflow: hidden;
     margin: 20px;
+    height: 23vh;
     box-shadow: 4px 6px 10px grey;
+    overflow: hidden;
+    
+}
+.top-section{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 20px 0 0;
 }
 .main_box_name {
     background-color: white;
@@ -53,8 +61,16 @@ body {
     align-items: center;
     justify-content: center;
     padding:10px;
+    font-weight: 500;
+    color: rgb(102, 101, 101);
 }
 .text{
-    padding: 7px;
+    padding: 0 10px 0 10px;
     flex-grow: 1;
+    font-weight: 400;
+    color: black;
+}
+.text-heading{
+    padding: 0 10px 0 10px;
+    color: rgb(110, 109, 109);
 }

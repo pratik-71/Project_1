@@ -1,150 +1,180 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <!-- TODO: Include Font Awesome file here -->
     <!-- TODO: Include Google Fonts file here -->
 
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.10.2/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://www.markuptag.com/bootstrap/5/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montez&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="/styles/postlist.css" />
+  </head>
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" />
-    <link rel="stylesheet" href="https://www.markuptag.com/bootstrap/5/css/bootstrap.min.css" />
-    <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="/styles/postlist.css"/>
-</head>
-
-<body >
+  <body>
     <!-- TODO: Include code for header here -->
 
     <div class="header_container">
-        <div class="header_name">
-            <ul>
-                <li id="name">Scribbler</li>
-                <li>Explore, Imagine, create</li>
-            </ul>
-        </div>
-        <div class="header_buttons">
-            <button type="button"  data-bs-toggle="modal" data-bs-target="#modalForm">
-                Sign Up
-            </button>
-            <button type="button" data-bs-toggle="modal" data-bs-target="#ModalForm">Sign In</button>
-        </div>
-     </div>
-
+      <div class="header_name">
+        <ul>
+          <li id="name">Scribbler</li>
+          <li>Explore, Imagine, create</li>
+        </ul>
+      </div>
+      <div class="header_buttons">
+        <button
+          type="button"
+          data-bs-toggle="modal"
+          data-bs-target="#modalForm"
+        >
+          Sign Up
+        </button>
+        <button
+          type="button"
+          data-bs-toggle="modal"
+          data-bs-target="#ModalForm"
+        >
+          Sign In
+        </button>
+      </div>
+    </div>
 
     <!-- list of all posts starts here -->
     <div class="main_container">
-
-        <!-- post 1 starts here -->
-        <div class="main_box">
-            <div class="main_box_name">
-                <p>Srishti Gupta</p>
-            </div>
-
-            <div>
-                <div>
-                    <p>‘let’ me be a ‘const’(ant), not a ‘var’(iable)!</p>
-                    <span>
-                        <!-- TODO: Include Font Awesome icon for delete icon here -->
-                    </span>
-                </div>
-                <p class="text">Since JavaScript does not have any type-checking, either of these keywords can be used to declare a variable of any type (datatype) in JavaScript. Though all the three keywords are used for the same purpose, they are different.</p>
-                <span>
-                    <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
-                </span>
-            </div>
+      <!-- post 1 starts here -->
+      <div class="main_box">
+        <div class="main_box_name">
+          <p>Srishti Gupta</p>
         </div>
-        <!-- post 1 ends here -->
 
-        <!-- post 2 starts here -->
-        <div class="main_box">
-            <div class="main_box_name">
-                <p>Colby Fayock</p>
-            </div>
-
-            <div>
-                <div>
-                    <p>What is linting and how can it save you time?</p>
-                    <span>
-                        <!-- TODO: Include Font Awesome icon for delete icon here -->
-                    </span>
-                </div>
-                <p class="text">One of the biggest challenges in software development is time. It’s something we can’t easily get more of, but linting can help us make the most out of the time we have.</p>
-                <span>
-                    <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
-                </span>
-            </div>
+        <div class="text-section">
+          <div class="top-section">
+            <p class="text-heading">
+              ‘let’ me be a ‘const’(ant), not a ‘var’(iable)!
+            </p>
+            <i
+              class="fa-solid fa-trash"
+              style="color: #686670; cursor: pointer"
+            ></i>
+          </div>
+          <p class="text">
+            Since JavaScript does not have any type-checking, either of these
+            keywords can be used to declare a variable of any type (datatype) in
+            JavaScript. Though all the three keywords are used for the same
+            purpose, they are different.
+          </p>
+          <i class="fa-solid fa-ellipsis" style="color: #686670"></i>
         </div>
-        <!-- post 2 ends here -->
+      </div>
+      <!-- post 1 ends here -->
 
-        <!-- post 3 starts here -->
-        <div class="main_box">
-            <div class="main_box_name">
-                <p>Yazeed Bzadough</p>
-            </div>
-
-            <div>
-                <div>
-                    <p>How to Get More Views on Your Tech Blog</p>
-                    <span>
-                        <!-- TODO: Include Font Awesome icon for delete icon here -->
-                    </span>
-                </div>
-                <p class="text">If you're a developer with a Twitter account, you've already seen everyone and their cat start a blog, YouTube channel, or Patreon. We all want to become stars, or at the very least, a recognizable name in the industry.</p>
-                <span>
-                    <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
-                </span>
-            </div>
+      <!-- post 2 starts here -->
+      <div class="main_box">
+        <div class="main_box_name">
+          <p>Colby Fayock</p>
         </div>
-        <!-- post 3 ends here -->
 
-        <!-- post 4 starts here -->
-        <div class="main_box">
-            <div class="main_box_name">
-                <p>Cedd Burge</p>
-            </div>
-
-            <div>
-                <div>
-                    <p>How to write easily describable code</p>
-                    <span>
-                        <!-- TODO: Include Font Awesome icon for delete icon here -->
-                    </span>
-                </div>
-                <p class="text">When code is not describable using words, most people have to do some mental mapping to turn it in to words. This wastes mental energy, and you run the risk of getting the mapping wrong. Different people will map to different words, which
-                    leads to confusion when discussing the code.</p>
-                <span>
-                    <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
-                </span>
-            </div>
+        <div class="text-section">
+          <div class="top-section">
+            <p class="text-heading">
+              What is linting and how can it save you time?
+            </p>
+            <i class="fa-solid fa-trash" style="color: #686670"></i>
+          </div>
+          <p class="text">
+            One of the biggest challenges in software development is time. It’s
+            something we can’t easily get more of, but linting can help us make
+            the most out of the time we have.
+          </p>
+          <i class="fa-solid fa-ellipsis" style="color: #686670"></i>
         </div>
-        <!-- post 4 ends here -->
+      </div>
+      <!-- post 2 ends here -->
 
-        <!-- post 5 starts here -->
-        <div class="main_box">
-            <div class="main_box_name">
-                <p>Srishti Gupta</p>
-            </div>
-
-            <div>
-                <div>
-                    <p>Everything you should know about ‘module’ & ‘require’ in Node.js</p>
-                    <span>
-                        <!-- TODO: Include Font Awesome icon for delete icon here -->
-                    </span>
-                </div>
-                <p class="text">Node.js treats each JavaScript file as a separate module. For instance, if you have a file containing some code and this file is named xyz.js, then this file is treated as a module in Node, and you can say that you’ve created a module
-                    named xyz.</p>
-                <span>
-                    <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
-                </span>
-            </div>
+      <!-- post 3 starts here -->
+      <div class="main_box">
+        <div class="main_box_name">
+          <p>Yazeed Bzadough</p>
         </div>
-        <!-- post 5 ends here -->
 
-        <!-- TODO: Write code for delete post modal here -->
+        <div class="text-section">
+          <div class="top-section">
+            <p class="text-heading">How to Get More Views on Your Tech Blog</p>
+            <i class="fa-solid fa-trash" style="color: #686670"></i>
+          </div>
+          <p class="text">
+            If you're a developer with a Twitter account, you've already seen
+            everyone and their cat start a blog, YouTube channel, or Patreon. We
+            all want to become stars, or at the very least, a recognizable name
+            in the industry.
+          </p>
+          <i class="fa-solid fa-ellipsis" style="color: #686670"></i>
+        </div>
+      </div>
+      <!-- post 3 ends here -->
 
+      <!-- post 4 starts here -->
+      <div class="main_box">
+        <div class="main_box_name">
+          <p>Cedd Burge</p>
+        </div>
+
+        <div class="text-section">
+          <div class="top-section">
+            <p class="text-heading">How to write easily describable code</p>
+            <i class="fa-solid fa-trash" style="color: #686670"></i>
+          </div>
+          <p class="text">
+            When code is not describable using words, most people have to do
+            some mental mapping to turn it in to words. This wastes mental
+            energy, and you run the risk of getting the mapping wrong. Different
+            people will map to different words, which leads to confusion when
+            discussing the code.
+          </p>
+          <i class="fa-solid fa-ellipsis" style="color: #686670"></i>
+        </div>
+      </div>
+      <!-- post 4 ends here -->
+
+      <!-- post 5 starts here -->
+      <div class="main_box">
+        <div class="main_box_name">
+          <p>Srishti Gupta</p>
+        </div>
+
+        <div class="text-section">
+          <div class="top-section">
+            <p class="text-heading">
+              Everything you should know about ‘module’ & ‘require’ in Node.js
+            </p>
+            <i class="fa-solid fa-trash" style="color: #686670"></i>
+          </div>
+          <p class="text">
+            Node.js treats each JavaScript file as a separate module. For
+            instance, if you have a file containing some code and this file is
+            named xyz.js, then this file is treated as a module in Node, and you
+            can say that you’ve created a module named xyz.
+          </p>
+          <i class="fa-solid fa-ellipsis" style="color: #686670"></i>
+        </div>
+      </div>
+      <!-- post 5 ends here -->
+
+      <!-- TODO: Write code for delete post modal here -->
     </div>
     <!-- list of all posts ends here -->
-</body>
 
+    <script
+      src="https://kit.fontawesome.com/2d6ce8d92a.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
