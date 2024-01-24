@@ -65,10 +65,11 @@ body {
     color: rgb(102, 101, 101);
 }
 .text{
-    padding: 0 10px 0 10px;
-    flex-grow: 1;
+    padding: 0px 10px 0px 10px;
     font-weight: 400;
     color: black;
+    overflow: hidden;
+    height: 10vh;
 }
 .text-heading{
     padding: 0 10px 0 10px;
