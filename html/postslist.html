@@ -60,9 +60,9 @@
             <p class="text-heading">
               ‘let’ me be a ‘const’(ant), not a ‘var’(iable)!
             </p>
-            <span>
-                <i data-toggle="modal" data-target="#CanWeDelete" class="fa-solid fa-trash" 
-                style="color: #686670; cursor: pointer"></i>
+            <span >
+                <button data-bs-toggle="modal" data-bs-target="#CanWeDelete" class="fa-solid fa-trash" 
+                style="color: #686670; cursor: pointer; border: none;background-color: rgb(206, 203, 203);;"></button>
             </span>
            
           </div>
@@ -88,7 +88,11 @@
             <p class="text-heading">
               What is linting and how can it save you time?
             </p>
-            <i class="fa-solid fa-trash" style="color: #686670"></i>
+            <span >
+              <button data-bs-toggle="modal" data-bs-target="#CanWeDelete" class="fa-solid fa-trash" 
+              style="color: #686670; cursor: pointer; border: none;background-color: rgb(206, 203, 203);;"></button>
+          </span>
+         
           </div>
           <p class="text">
             One of the biggest challenges in software development is time. It’s
@@ -109,7 +113,11 @@
         <div class="text-section">
           <div class="top-section">
             <p class="text-heading">How to Get More Views on Your Tech Blog</p>
-            <i class="fa-solid fa-trash" style="color: #686670"></i>
+            <span >
+              <button data-bs-toggle="modal" data-bs-target="#CanWeDelete" class="fa-solid fa-trash" 
+              style="color: #686670; cursor: pointer; border: none;background-color: rgb(206, 203, 203);;"></button>
+          </span>
+         
           </div>
           <p class="text">
             If you're a developer with a Twitter account, you've already seen
@@ -131,7 +139,11 @@
         <div class="text-section">
           <div class="top-section">
             <p class="text-heading">How to write easily describable code</p>
-            <i class="fa-solid fa-trash" style="color: #686670"></i>
+            <span >
+              <button data-bs-toggle="modal" data-bs-target="#CanWeDelete" class="fa-solid fa-trash" 
+              style="color: #686670; cursor: pointer; border: none;background-color: rgb(206, 203, 203);;"></button>
+          </span>
+         
           </div>
           <p class="text">
             When code is not describable using words, most people have to do
@@ -156,7 +168,11 @@
             <p class="text-heading">
               Everything you should know about ‘module’ & ‘require’ in Node.js
             </p>
-            <i class="fa-solid fa-trash" style="color: #686670"></i>
+            <span >
+              <button data-bs-toggle="modal" data-bs-target="#CanWeDelete" class="fa-solid fa-trash" 
+              style="color: #686670; cursor: pointer; border: none;background-color: rgb(206, 203, 203);;"></button>
+          </span>
+         
           </div>
           <p class="text">
             Node.js treats each JavaScript file as a separate module. For
@@ -240,20 +256,28 @@
     </div>
   </div>
 
-  <div class="modal fade" id="#CanWeDelete" tabindex="-1" role="dialog"  aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
+  <div class="modal fade" id="CanWeDelete" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered w-25" role="document">
       <div class="modal-content">
-        <div class="modal-body" id="DeleteHeading">
-            Are you sure you want to delete this post?
-        <div id="BtnModal">
-            <button type="reset" class="btn btn-success"  id="Yes">Yes</button>
-            &nbsp;
-            <button type="submit" class="btn btn-danger" id="No" >No</button>
+        <div class="modal-body text-center" id="DeleteHeading">
+          <h6 class="modal-title mb-4 ">Are you sure you want to delete this post ?</h6>
+          <div class="row mx-auto mb-3 justify-content-between">
+            <div class="col-auto" id="BtnModal">
+              <button type="reset" class="btn btn-danger" style="padding: 25% 90% 25% 90%;">No</button>
+            </div>
+            <div class="col-auto mx-5" id="BtnModal">
+              <button type="submit" class="btn btn-success float-right"  style="padding: 25% 90% 25% 90%;">Yes</button>
+            </div>
+          </div>
         </div>
-        </div>
-     </div>
-</div>
-</div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  
 
     </div>
     <!-- list of all posts ends here -->
@@ -273,5 +297,6 @@
     ></script>
     <script src="/scripts/index.js"></script>
     <script src="https://www.markuptag.com/bootstrap/5/js/bootstrap.bundle.min.js"></script>
+    
   </body>
 </html>
