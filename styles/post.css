@@ -1,0 +1,32 @@
+body {
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+}
+.header_container{
+    display: flex;
+    justify-content: space-between;
+}
+.header_name ul {
+    list-style: none;
+    font-size: 12px;
+}
+.header_name #name {
+    font-family: 'Montez', cursive; 
+    font-size: 30px;
+    color: blue;
+}
+.header_buttons{
+    margin: 10px;
+}
+.header_buttons button{
+    padding: 5px 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+    box-shadow: 1px 1px 5px grey;
+    cursor: pointer;
+    margin-left: 10px;
+}
