@@ -8,6 +8,13 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" />
     <link rel="stylesheet" href="https://www.markuptag.com/bootstrap/5/css/bootstrap.min.css" />
     <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+    <style>
+      .editable {
+          border: 2px solid #007bff;
+          padding: 5px;
+      }
+  </style>
+    
 </head>
 <body>
 
@@ -31,42 +38,110 @@
     <!-- ------------------------------------ header/navbar ends ----------------------------------- -->
 
 
+
+      <!-- -------------------------------------- body start ---------------------------------------- -->
+
+      <div class="post_main_container" >
+        <div class="post_heading" id="post_heading" contenteditable="false">
+          <p  id="post_heading_p"> ‘let’ me be a ‘const’(ant), not a ‘var’(iable)!</p>
+        </div>
+        <div class="post_author">
+          <p>Srishti Gupta </p>
+          <button 
+            onclick="ToggleEditSave()"
+            style="color: #ffffff;"
+            id="post_author_button"
+          >Edit <i class="fa-solid fa-pen-to-square" style="color: #ffffff;"></i></button>
+        </div>
+        <div class="post_text" id="post_text" contenteditable="false" >
+          <p >
+           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos sed numquam vel ipsam, consequatur odit obcaecati quidem enim quaerat, cupiditate quo. Distinctio commodi similique unde laborum numquam, libero reprehenderit ea fuga quo vel, illum maiores hic cum dolorem perferendis sed ullam impedit fugit atque exercitationem! Placeat vero error, odit sit explicabo consequatur provident ipsum tenetur reprehenderit! Quibusdam delectus magnam quaerat cumque? Nemo temporibus sunt odit eveniet eos cum excepturi natus vero possimus maxime ut sapiente omnis magnam accusantium minima quos aliquid, enim repellat velit. Consectetur iste sed ad at laborum porro quia nobis explicabo dolores quae autem nulla obcaecati eum rerum sapiente iure numquam quod illo quo quidem doloremque cumque, deserunt praesentium vel. Accusamus molestias, incidunt, autem distinctio minima ex quo commodi nesciunt tenetur illo magni, deleniti culpa! Id delectus accusamus dolore deserunt amet officiis optio vel quas nam molestias esse, saepe commodi voluptatibus maxime possimus voluptatem voluptatum sunt consequuntur dolores repellat ipsa minus voluptas! Veniam, consectetur deserunt eveniet adipisci, nam ab cupiditate tempora doloribus rem esse nihil voluptatum suscipit eligendi inventore, veritatis enim itaque velit earum? Mollitia ullam, in recusandae at velit ad eius, modi dolore hic facere consequuntur aut ipsum ea assumenda fugit non doloremque quas et adipisci?
+          </p>
+        </div>
+      </div>
+       
+      <!-- -------------------------------------- body ends ---------------------------------------- -->
+
+
       <!-------------------------------------- Modals start -------------------------------------->
 
          <!-- sign up -->
-
-         <div class="modal fade" id="modalForm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title" id="exampleModalLabel">Get Started</h4>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="mb-3">
-                                <label class="form-label">Name</label>
-                                <input type="text" required class="form-control" id="name" name="name" placeholder="Enter your name" />
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label">Username</label>
-                                <input type="text" required class="form-control" id="username" name="username" placeholder="Enter your username" />
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label">Password</label>
-                                <input type="password" required class="form-control" id="password" name="password" placeholder="Enter your password" />
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label">Confirm Password</label>
-                                <input type="password" required class="form-control" id="conpassword" name="conpassword" placeholder="Re-enter your password" />
-                            </div>
-
-                                <button type="submit" class="btn btn-success mb-2  mx-auto w-100">Sign Up</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
+         <div
+         class="modal fade"
+         id="modalForm"
+         tabindex="-1"
+         aria-labelledby="exampleModalLabel"
+         aria-hidden="true"
+       >
+         <div class="modal-dialog modal-dialog-centered">
+           <div class="modal-content">
+             <div class="modal-header">
+               <h4 class="modal-title" id="exampleModalLabel">Get Started</h4>
+               <button
+                 type="button"
+                 class="btn-close"
+                 data-bs-dismiss="modal"
+                 aria-label="Close"
+               ></button>
+             </div>
+             <div class="modal-body">
+               <form>
+                 <div class="mb-3">
+                   <label class="form-label">Name</label>
+                   <input
+                     type="text"
+                     required
+                     class="form-control"
+                     id="name"
+                     name="name"
+                     placeholder="Enter your name"
+                   />
+                 </div>
+                 <div class="mb-3">
+                   <label class="form-label">Username</label>
+                   <input
+                     type="text"
+                     required
+                     class="form-control"
+                     id="username"
+                     name="username"
+                     placeholder="Enter your username"
+                   />
+                 </div>
+                 <div class="mb-3">
+                   <label class="form-label">Password</label>
+                   <input
+                     type="password"
+                     required
+                     class="form-control"
+                     id="password"
+                     name="password"
+                     placeholder="Enter your password"
+                   />
+                 </div>
+                 <div class="mb-3">
+                   <label class="form-label">Confirm Password</label>
+                   <input
+                     type="password"
+                     required
+                     class="form-control"
+                     id="conpassword"
+                     name="conpassword"
+                     placeholder="Re-enter your password"
+                   />
+                 </div>
+ 
+                 <button
+                   type="submit"
+                   class="btn btn-success mb-2 mx-auto w-100"
+                 >
+                   Sign Up
+                 </button>
+               </form>
+             </div>
+           </div>
+         </div>
+       </div>
 
 
         <!-- Sign in -->
@@ -108,7 +183,11 @@
 
 
 
-    <script src="/scripts/index.js"></script>
-    <script src="https://www.markuptag.com/bootstrap/5/js/bootstrap.bundle.min.js"></script>
+        <script
+        src="https://kit.fontawesome.com/2d6ce8d92a.js"
+        crossorigin="anonymous"
+      ></script>
+      <script  src="/scripts/post.js"></script>
+      <script src="https://www.markuptag.com/bootstrap/5/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

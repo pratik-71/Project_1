@@ -30,3 +30,41 @@ body {
     cursor: pointer;
     margin-left: 10px;
 }
+.post_main_container{
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    height: 85vh;
+    margin: 5px 20px 0px 20px;
+    overflow: hidden;
+}
+.post_heading {
+    border: 2px solid black;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    margin: 0 10px 0 10px;
+}
+.post_heading p{
+    margin:5px
+}
+.post_author{
+    display: flex;
+    border: 2px solid black;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 10px 0 10px;
+}
+.post_author p {
+    margin:5px;
+}
+#post_author_button{
+    border: none; 
+    background-color: rgb(173, 38, 173); 
+    padding: 5px 20px 5px 20px;
+}
+.post_text{
+    background-color: white;
+    margin: 10px;
+    border: 2px solid black;
+}
