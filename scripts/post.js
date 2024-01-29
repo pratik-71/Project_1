@@ -1,18 +1,30 @@
 function ToggleEditSave() {
-    if (document.getElementById('post_text').getAttribute("contentEditable") === "true") {
-        document.getElementById('post_text').setAttribute("contentEditable", "false");
-        document.getElementById('post_heading').setAttribute("contentEditable", "false");
-        document.getElementById('post_text').style.border = "none";
-        document.getElementById('post_heading').style.border = "none";
+    var postText = document.getElementById('post_text');
+    var postHeading = document.getElementById('post_heading');
+    var updatedText = "UPDATED: ";
+
+    if (postText.getAttribute("contentEditable") === "true") {
+        // Content is being edited, save the changes
+        postText.setAttribute("contentEditable", "false");
+        postHeading.setAttribute("contentEditable", "false");
+        postText.style.border = "none";
+        postHeading.style.border = "none";
         document.getElementById('post_author_button').innerHTML = "Edit<i class='fa fa-edit'></i>";
+
+        if (!postText.innerText.startsWith(updatedText)) {
+            postText.innerText = updatedText + postText.innerText;
+            postHeading.innerText = updatedText + postHeading.innerText;  // Fix here
+        }
     } else {
-        document.getElementById('post_text').setAttribute("contentEditable", "true");
-        document.getElementById('post_heading').setAttribute("contentEditable", "true");
-        document.getElementById('post_text').style.border = "2px solid purple";
-        document.getElementById('post_heading').style.border = "2px solid purple";
+        // Content is not being edited, allow editing
+        postText.setAttribute("contentEditable", "true");
+        postHeading.setAttribute("contentEditable", "true");
+        postText.style.border = "2px solid purple";
+        postHeading.style.border = "2px solid purple";
         document.getElementById('post_author_button').innerHTML = "Save<i class='fa fa-save'></i>";
     }
 }
+
 
 var Likes = 0;
 
