@@ -44,7 +44,7 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <h4 class="modal-title" id="exampleModalLabel">Get Started</h4>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <button type="button" class="fa fa-times" data-bs-dismiss="modal" aria-hidden="true" aria-label="Close" style="border: none;background-color: white; color: grey;"></button>
                     </div>
                     <div class="modal-body">
                         <form>
@@ -82,7 +82,7 @@
                   <form action="">
                     <div class="modal-header">
                       <h5 class="modal-title">Welcome Back!</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      <button type="button" class="fa fa-times" data-bs-dismiss="modal" aria-hidden="true" aria-label="Close" style="border: none;background-color: white; color: grey;"></button>
                     </div>
                     <div class="modal-body">
                       <div class="mb-3">
@@ -111,24 +111,27 @@
           <div class="modal fade" id="CreatePost" tabindex="-1" role="dialog" aria-labelledby="CreatePostTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" style="max-width: 85%" role="document">
                 <div class="modal-content">
-                    <div class="modal-header">
-                        <h3 class="modal-title fw-light" id="CreatePostTitle">Pen Your Post</h3>
-                        <button type="button" class="btn-close d-none" data-bs-dismiss="modal" aria-label="Close"></button>
-                        <!-- Custom close button image -->
-                        <i class="fa fa-times" aria-hidden="true" class="custom-close-btn " style="cursor: pointer;" data-bs-dismiss="modal" aria-label="Close"></i>
-                    </div>
-                    <div class="modal-body">
-                        <label for="title">Title</label>
-                        <input required type="text" class="form-control" name="title" id="" placeholder="Enter title of your post">
-                    </div>
-                    <div class="modal-body">
-                        <label for="contents">Contents</label>
-                        <textarea required class="form-control" name="contents" id="" cols="40" rows="12"
-                            placeholder="Enter the contents of your post"></textarea>
-                    </div>
-                    <div class="pt-3 d-flex justify-content-center mb-3" id="createbtn">
-                        <button type="submit" class="btn btn-success" id="create" style="width: 10%;">Create</button>
-                    </div>
+                    <form action="">
+                        <div class="modal-header">
+                            <h3 class="modal-title fw-light" id="CreatePostTitle">Pen Your Post</h3>
+                            <button type="button" class="fa fa-times" data-bs-dismiss="modal" aria-hidden="true" aria-label="Close" style="border: none;background-color: white; color: grey;"></button>
+                            
+                            
+                        </div>
+                        <div class="modal-body">
+                            <label for="title">Title</label>
+                            <input type="text" required class="form-control" name="title" id="" placeholder="Enter title of your post">
+                        </div>
+                        <div class="modal-body">
+                            <label for="contents">Contents</label>
+                            <textarea required  class="form-control" name="contents" id="" cols="40" rows="12"
+                                placeholder="Enter the contents of your post"></textarea>
+                        </div>
+                        <div class="pt-3 d-flex justify-content-center mb-3" id="createbtn">
+                            <button type="submit" class="btn btn-success" id="create" style="width: 10%;">Create</button>
+                        </div>
+                    </form>
+                 
                 </div>
             </div>
         </div>

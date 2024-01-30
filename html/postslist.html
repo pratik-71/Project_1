@@ -16,11 +16,8 @@
       href="https://fonts.googleapis.com/css?family=Montez&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" type="text/css" href="/styles/postlist.css" />
+    <link rel="stylesheet" type="text/css" href="/styles/postslist.css" />
   </head>
-
-
-
 
   <body>
     <!-- TODO: Include code for header here -->
@@ -50,10 +47,6 @@
       </div>
     </div>
 
-
-
-
-
     <!-- list of all posts starts here -->
     <div class="main_container">
       <!-- post 1 starts here -->
@@ -69,7 +62,7 @@
             </p>
             <span>
               <button
-                 onclick="getid('main_box_1')"
+                onclick="getid('main_box_1')"
                 data-bs-toggle="modal"
                 data-bs-target="#CanWeDelete"
                 class="fa-solid fa-trash"
@@ -90,20 +83,19 @@
           </p>
           <a href="/html/post.html">
             <i
-            class="fa-solid fa-ellipsis"
-            style="
-              color: #686670;
-              float: right;
-              padding-right: 20px;
-              cursor: pointer;"
-          ></i>
+              class="fa-solid fa-ellipsis"
+              style="
+                color: #686670;
+                float: right;
+                padding-right: 20px;
+                cursor: pointer;
+              "
+            ></i>
           </a>
         </div>
       </div>
 
       <!-- post 1 ends here -->
-
-
 
       <!-- post 2 starts here -->
 
@@ -119,7 +111,7 @@
             </p>
             <span>
               <button
-              onclick="getid('main_box_2')"
+                onclick="getid('main_box_2')"
                 data-bs-toggle="modal"
                 data-bs-target="#CanWeDelete"
                 class="fa-solid fa-trash"
@@ -139,20 +131,19 @@
           </p>
           <a href="/html/post.html">
             <i
-            class="fa-solid fa-ellipsis"
-            style="
-              color: #686670;
-              float: right;
-              padding-right: 20px;
-              cursor: pointer;"
-          ></i>
+              class="fa-solid fa-ellipsis"
+              style="
+                color: #686670;
+                float: right;
+                padding-right: 20px;
+                cursor: pointer;
+              "
+            ></i>
           </a>
         </div>
       </div>
 
       <!-- post 2 ends here -->
-
-
 
       <!-- post 3 starts here -->
 
@@ -166,7 +157,7 @@
             <p class="text-heading">How to Get More Views on Your Tech Blog</p>
             <span>
               <button
-              onclick="getid('main_box_3')"
+                onclick="getid('main_box_3')"
                 data-bs-toggle="modal"
                 data-bs-target="#CanWeDelete"
                 class="fa-solid fa-trash"
@@ -187,20 +178,19 @@
           </p>
           <a href="/html/post.html">
             <i
-            class="fa-solid fa-ellipsis"
-            style="
-              color: #686670;
-              float: right;
-              padding-right: 20px;
-              cursor: pointer;"
-          ></i>
+              class="fa-solid fa-ellipsis"
+              style="
+                color: #686670;
+                float: right;
+                padding-right: 20px;
+                cursor: pointer;
+              "
+            ></i>
           </a>
         </div>
       </div>
-      
+
       <!-- post 3 ends here -->
-
-
 
       <!-- post 4 starts here -->
 
@@ -214,7 +204,7 @@
             <p class="text-heading">How to write easily describable code</p>
             <span>
               <button
-              onclick="getid('main_box_4')"
+                onclick="getid('main_box_4')"
                 data-bs-toggle="modal"
                 data-bs-target="#CanWeDelete"
                 class="fa-solid fa-trash"
@@ -236,20 +226,19 @@
           </p>
           <a href="/html/post.html">
             <i
-            class="fa-solid fa-ellipsis"
-            style="
-              color: #686670;
-              float: right;
-              padding-right: 20px;
-              cursor: pointer;"
-          ></i>
+              class="fa-solid fa-ellipsis"
+              style="
+                color: #686670;
+                float: right;
+                padding-right: 20px;
+                cursor: pointer;
+              "
+            ></i>
           </a>
         </div>
       </div>
 
       <!-- post 4 ends here -->
-
-
 
       <!-- post 5 starts here -->
 
@@ -265,7 +254,7 @@
             </p>
             <span>
               <button
-              onclick="getid('main_box_5')"
+                onclick="getid('main_box_5')"
                 data-bs-toggle="modal"
                 data-bs-target="#CanWeDelete"
                 class="fa-solid fa-trash"
@@ -286,24 +275,22 @@
           </p>
           <a href="/html/post.html">
             <i
-            class="fa-solid fa-ellipsis"
-            style="
-              color: #686670;
-              float: right;
-              padding-right: 20px;
-              cursor: pointer;"
-          ></i>
+              class="fa-solid fa-ellipsis"
+              style="
+                color: #686670;
+                float: right;
+                padding-right: 20px;
+                cursor: pointer;
+              "
+            ></i>
           </a>
         </div>
       </div>
       <!-- post 5 ends here -->
 
-
-
       <!-- TODO: Write code for delete post modal here -->
 
-
-                                           <!-- modals -->
+      <!-- modals -->
 
       <!-- sign up -->
 
@@ -320,9 +307,11 @@
               <h4 class="modal-title" id="exampleModalLabel">Get Started</h4>
               <button
                 type="button"
-                class="btn-close"
+                class="fa fa-times"
                 data-bs-dismiss="modal"
+                aria-hidden="true"
                 aria-label="Close"
+                style="border: none; background-color: white; color: grey"
               ></button>
             </div>
             <div class="modal-body">
@@ -384,7 +373,6 @@
         </div>
       </div>
 
-
       <!-- Sign in -->
 
       <div class="modal fade" id="ModalForm" tabindex="-1" aria-hidden="true">
@@ -396,9 +384,11 @@
                 <h5 class="modal-title">Welcome Back!</h5>
                 <button
                   type="button"
-                  class="btn-close"
+                  class="fa fa-times"
                   data-bs-dismiss="modal"
+                  aria-hidden="true"
                   aria-label="Close"
+                  style="border: none; background-color: white; color: grey"
                 ></button>
               </div>
               <div class="modal-body">
@@ -456,7 +446,7 @@
               <div class="row mx-auto mb-3 justify-content-between">
                 <div class="col-auto" id="BtnModal">
                   <button
-                  data-bs-dismiss="modal"
+                    data-bs-dismiss="modal"
                     type="reset"
                     class="btn btn-danger"
                     style="padding: 25% 90% 25% 90%"

@@ -40,6 +40,19 @@ function like_post() {
     }
 }
 
+function toggleComments() {
+    var commentSection = document.getElementById('commentSection');
+    var commentBox = document.querySelector('.post_comment_box');
+
+    if (commentSection.style.display === 'none' || commentSection.style.display === '') {
+        commentSection.style.display = 'block';
+        commentBox.style.display = 'block';
+    } else {
+        commentSection.style.display = 'none';
+        commentBox.style.display = 'none';
+    }
+}
+
 function addcomment() {
 
     var commentText = document.getElementById("commentText").value;
@@ -50,9 +63,10 @@ function addcomment() {
       newComment.innerHTML = "<p>" + commentText + "</p>";
  
       var commentsSection = document.querySelector(".post_comment_box");
-      commentsSection.appendChild(newComment);
+      commentsSection.insertBefore(newComment, commentsSection.firstChild);
 
       document.getElementById("commentText").value = "";
       commentsSection.style.display = "block";
     }
+    toggleComments()
   }
