@@ -43,7 +43,6 @@ function like_post() {
 
 
 function addcomment() {
-
     var commentText = document.getElementById("commentText").value;
     var commentSection = document.getElementById("commentSection");
 
@@ -56,8 +55,6 @@ function addcomment() {
         commentsBox.insertBefore(newComment, commentsBox.firstChild);
 
         document.getElementById("commentText").value = "";
+        commentSection.style.display = "block";
     }
-
-    commentSection.style.display = "block";
- 
-  }
+}
