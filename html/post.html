@@ -69,11 +69,15 @@
           style="color: #ffffff"
           id="post_author_button"
         >
-          Edit <i class="fa-solid fa-pen-to-square" style="color: #ffffff;padding-left: 5px;"></i>
+          Edit
+          <i
+            class="fa-solid fa-pen-to-square"
+            style="color: #ffffff; padding-left: 5px"
+          ></i>
         </button>
       </div>
       <div class="post_text" id="post_text" contenteditable="false">
-        <p >
+        <p>
           Node.js treats each JavaScript file as a separate module. For
           instance, if you have a file containing some code and this file is
           named xyz.js, then this file is treated as a module in Node, and you
@@ -124,26 +128,33 @@
         </p>
       </div>
       <div class="post_like">
-        <button onclick="like_post()" id="likebtn"><i class="fa-solid fa-thumbs-up he" style="color: #ffffff;padding-right:5px ;" ></i>Like</button>
+        <button onclick="like_post()" id="likebtn">
+          <i
+            class="fa-solid fa-thumbs-up he"
+            style="color: #ffffff; padding-right: 5px"
+          ></i
+          >Like
+        </button>
       </div>
-      <div class="post_like_msg" >
+      <div class="post_like_msg">
         <span id="likesCount">Be the first one to like this!</span>
       </div>
       <div class="post_textbox">
-        <textarea id="commentText" rows="3"  placeholder="Leave a comment..."></textarea>
+        <textarea
+          id="commentText"
+          rows="3"
+          placeholder="Leave a comment..."
+        ></textarea>
       </div>
       <div class="post_comment_btn">
         <button onclick="addcomment()">Comment</button>
       </div>
       <div id="commentSection" style="display: none;">
         <p class="comment_heading">All comments</p>
-        <div class="post_comment_box" >
-          <div class="post_each_comment" >
-            
-          </div>
+        <div class="post_comment_box">
+          <div class="post_each_comment"></div>
         </div>
       </div>
-        
     </div>
 
     <!-- -------------------------------------- body ends ---------------------------------------- -->
@@ -162,7 +173,14 @@
         <div class="modal-content">
           <div class="modal-header">
             <h4 class="modal-title" id="exampleModalLabel">Get Started</h4>
-            <button type="button" class="fa fa-times" data-bs-dismiss="modal" aria-hidden="true" aria-label="Close" style="border: none;background-color: white; color: grey;"></button>
+            <button
+              type="button"
+              class="fa fa-times"
+              data-bs-dismiss="modal"
+              aria-hidden="true"
+              aria-label="Close"
+              style="border: none; background-color: white; color: grey"
+            ></button>
           </div>
           <div class="modal-body">
             <form>
@@ -229,7 +247,14 @@
           <form action="">
             <div class="modal-header">
               <h5 class="modal-title">Welcome Back!</h5>
-              <button type="button" class="fa fa-times" data-bs-dismiss="modal" aria-hidden="true" aria-label="Close" style="border: none;background-color: white; color: grey;"></button>
+              <button
+                type="button"
+                class="fa fa-times"
+                data-bs-dismiss="modal"
+                aria-hidden="true"
+                aria-label="Close"
+                style="border: none; background-color: white; color: grey"
+              ></button>
             </div>
             <div class="modal-body">
               <div class="mb-3">

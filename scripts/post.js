@@ -4,7 +4,7 @@ function ToggleEditSave() {
     var updatedText = "UPDATED: ";
 
     if (postText.getAttribute("contentEditable") === "true") {
-        // Content is being edited, save the changes
+
         postText.setAttribute("contentEditable", "false");
         postHeading.setAttribute("contentEditable", "false");
         postText.style.border = "none";
@@ -16,7 +16,7 @@ function ToggleEditSave() {
             postHeading.innerHTML = updatedText +  postHeading.innerText;  
         }
     } else {
-        // Content is not being edited, allow editing
+ 
         postText.setAttribute("contentEditable", "true");
         postHeading.setAttribute("contentEditable", "true");
         postText.style.border = "2px solid purple";
@@ -40,33 +40,24 @@ function like_post() {
     }
 }
 
-function toggleComments() {
-    var commentSection = document.getElementById('commentSection');
-    var commentBox = document.querySelector('.post_comment_box');
 
-    if (commentSection.style.display === 'none' || commentSection.style.display === '') {
-        commentSection.style.display = 'block';
-        commentBox.style.display = 'block';
-    } else {
-        commentSection.style.display = 'none';
-        commentBox.style.display = 'none';
-    }
-}
 
 function addcomment() {
 
     var commentText = document.getElementById("commentText").value;
+    var commentSection = document.getElementById("commentSection");
 
     if (commentText.trim() !== "") {
-      var newComment = document.createElement("div");
-      newComment.className = "post_each_comment";
-      newComment.innerHTML = "<p>" + commentText + "</p>";
- 
-      var commentsSection = document.querySelector(".post_comment_box");
-      commentsSection.insertBefore(newComment, commentsSection.firstChild);
+        var newComment = document.createElement("div");
+        newComment.className = "post_each_comment";
+        newComment.innerHTML = "<p>" + commentText + "</p>";
 
-      document.getElementById("commentText").value = "";
-      commentsSection.style.display = "block";
+        var commentsBox = document.querySelector(".post_comment_box");
+        commentsBox.insertBefore(newComment, commentsBox.firstChild);
+
+        document.getElementById("commentText").value = "";
     }
-    toggleComments()
+
+    commentSection.style.display = "block";
+ 
   }
