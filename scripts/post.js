@@ -9,11 +9,11 @@ function ToggleEditSave() {
         postHeading.setAttribute("contentEditable", "false");
         postText.style.border = "none";
         postHeading.style.border = "none";
-        document.getElementById('post_author_button').innerHTML = "Edit<i class='fa fa-edit'></i>";
+        document.getElementById('post_author_button').innerHTML = "Edit<i class='fa fa-edit' style='padding-left: 5px'></i>";
 
-        if (!postText.innerText.startsWith(updatedText)) {
-            postText.innerText = updatedText + postText.innerText;
-            postHeading.innerText = updatedText + postHeading.innerText;  // Fix here
+        if (!postText.innerHTML.startsWith(updatedText)) {
+            postText.innerHTML = updatedText +"<br>"+ postText.innerText;
+            postHeading.innerHTML = updatedText +  postHeading.innerText;  
         }
     } else {
         // Content is not being edited, allow editing
@@ -21,15 +21,15 @@ function ToggleEditSave() {
         postHeading.setAttribute("contentEditable", "true");
         postText.style.border = "2px solid purple";
         postHeading.style.border = "2px solid purple";
-        document.getElementById('post_author_button').innerHTML = "Save<i class='fa fa-save'></i>";
+        document.getElementById('post_author_button').innerHTML = "Save<i class='fa fa-save' style='padding-left: 5px'></i>";
     }
 }
 
 
 var Likes = 0;
 
-function likePost() {
-    document.getElementById("likeBtn").innerHTML = "<i class='fa fa-thumbs-up'></i>Liked";
+function like_post() {
+    document.getElementById("likebtn").innerHTML = "<i class='fa fa-thumbs-up' style='color: #ffffff;padding-right:5px'></i>Liked";
     Likes += 1;
     if (Likes !== 0) {
         if (Likes == 1) {
@@ -40,22 +40,19 @@ function likePost() {
     }
 }
 
-function addComment() {
-    var comment = document.getElementById('commentText').value;
-    var temp = document.createElement("div");
-    temp.innerHTML = "<br>"
-    temp.style.backgroundColor = "#fff";
-    temp.style.margin = "10px 10px 10px 10px";
-    temp.style.padding = "0 20px 20px 10px";
-    var textnode = document.createTextNode(comment);
-    temp.appendChild(textnode);
+function addcomment() {
 
-    if (comment === "") {
-        alert("Please add a comment!");
-    } else {
-        var latestComment = document.getElementById("allCommentsBox");
-        latestComment.style.display = "block";
-        latestComment.insertBefore(temp, latestComment.childNodes[0]);
-        document.getElementById('commentText').value = "";
+    var commentText = document.getElementById("commentText").value;
+
+    if (commentText.trim() !== "") {
+      var newComment = document.createElement("div");
+      newComment.className = "post_each_comment";
+      newComment.innerHTML = "<p>" + commentText + "</p>";
+ 
+      var commentsSection = document.querySelector(".post_comment_box");
+      commentsSection.appendChild(newComment);
+
+      document.getElementById("commentText").value = "";
+      commentsSection.style.display = "block";
     }
-}
+  }

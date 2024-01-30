@@ -69,7 +69,7 @@
           style="color: #ffffff"
           id="post_author_button"
         >
-          Edit <i class="fa-solid fa-pen-to-square" style="color: #ffffff"></i>
+          Edit <i class="fa-solid fa-pen-to-square" style="color: #ffffff;padding-left: 5px;"></i>
         </button>
       </div>
       <div class="post_text" id="post_text" contenteditable="false">
@@ -120,19 +120,29 @@
           arises now is how do you specify something in a module that can be
           used by some other module? This is when the module & require
           parameters of the function wrapper are helpful. Let’s discuss these
-          two parameters in this article. module The module parameter (rather a
-          keyword in a module in Node) refers to the object representing the
-          current module. exports is a key of the module object, the
-          corresponding value of which is an object. The default value of
-          module.exports object is {} (empty object). You can check this by
-          logging the value of module keyword inside any module. Let’s check
-          what is the value of module parameter inside the circle module. Notice
-          that there is a console.log(module);  
+          two parameters in this article.
         </p>
       </div>
       <div class="post_like">
-        <button><i class="fa-solid fa-thumbs-up he" style="color: #ffffff;padding-right:5px ;" ></i>Like</button>
+        <button onclick="like_post()" id="likebtn"><i class="fa-solid fa-thumbs-up he" style="color: #ffffff;padding-right:5px ;" ></i>Like</button>
       </div>
+      <div class="post_like_msg" >
+        <span id="likesCount">Be the first one to like this!</span>
+      </div>
+      <div class="post_textbox">
+        <textarea id="commentText" rows="3"  placeholder="Leave a comment"></textarea>
+      </div>
+      <div class="post_comment_btn">
+        <button onclick="addcomment()">Comment</button>
+      </div>
+      <div>
+        <p class="comment_heading">All comments</p>
+        <div class="post_comment_box" style="display: none;">
+          <div class="post_each_comment">
+          </div>
+        </div>
+      </div>
+        
     </div>
 
     <!-- -------------------------------------- body ends ---------------------------------------- -->

@@ -64,16 +64,63 @@ body {
 }
 .post_text{
     background-color: white;
-    margin: 10px 10px 0px 10px;
+    margin: 10px 10px 10px 10px;
    font-size: small; 
    font-weight: 500;
    text-align: justify;
 }
+.post_text p{
+   margin: 0;
+}
 
 .post_like button{
-    margin-left:10px;
+    margin-left:10px; 
+    margin-top: auto;
     padding: 4px 10px 4px 10px ;
     background-color: rgb(236, 54, 85);
     border: none;
     color: aliceblue;
+}
+.post_like_msg{
+    margin-left: 10px;
+    margin-top: 5px;
+    color: grey;
+    font-family: monospace;
+    font-size: small;
+}
+.post_textbox textarea {
+    width: 70%; 
+    margin-top: 10px;
+    box-sizing: border-box; 
+    resize: vertical;
+    margin-left: 10px;
+    font-size: small;
+}
+.post_comment_btn button{
+    margin-left: 10px;
+    font-size: small;
+    background-color: rgb(236, 54, 85);
+    text-align: center;
+    color: white;
+    border: none;
+    padding: 4px 8px 4px 8px;
+}
+.comment_heading {
+    font-size: 14px;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-weight: 600;
+}
+.post_comment_box{
+    width: 71%; 
+    margin-left: 10px;
+    margin-top: 0;
+    padding: 5px;
+    background-color: rgb(197, 191, 191);
+}
+.post_each_comment p {
+    margin: 5px;
+    background-color: white;
+    padding:5px 1px 1px 10px;
+    font-size: small;
 }
