@@ -2,7 +2,7 @@ function ToggleEditSave() {
     var postText = document.getElementById('post_text');
     var postHeading = document.getElementById('post_heading');
     var updatedText = "UPDATED: ";
-
+   
     if (postText.getAttribute("contentEditable") === "true") {
 
         postText.setAttribute("contentEditable", "false");
